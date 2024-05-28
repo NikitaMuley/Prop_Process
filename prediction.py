@@ -57,8 +57,8 @@ def main():
     Total_Project_Cost= st.number_input('Please enter Total Project Cost', format="%.2f")
     Total_Project_Quote= st.number_input('Please enter Total Project Quote', format="%.2f")
     Reporting_Price_US= st.number_input('Please enter Reporting Price in US Dollars', format="%.2f")
-    KPI_BlendLaborRate= st.number_input('Please enter BlendLaborRate(RA_Product_Quote/RA_Labor_Hours)', format="%.2f")
-    KPI_BlendLaborCost= st.number_input('Please enter BlendLaborCost(RA_Product_Cost/RA_Labor_Hours)', format="%.2f")
+    KPI_BlendLaborRate= st.number_input('Please enter BlendLaborRate (RA_Product_Quote/RA_Labor_Hours)', format="%.2f")
+    KPI_BlendLaborCost= st.number_input('Please enter BlendLaborCost (RA_Product_Cost/RA_Labor_Hours)', format="%.2f")
     
     # code for Prediction
     Proposal_Process_status = ''
