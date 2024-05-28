@@ -9,7 +9,7 @@ import pickle
 import numpy as np
 import streamlit as st
 
-loaded_model = pickle.load(open('C:/Users/NHande2/NMY/GEBS/2_EMEA_Proposals/Proposal_process_hgfc/gradient_boost_machine_model.pkl', 'rb'))
+loaded_model = pickle.load(open('gradient_boost_machine_model.pkl', 'rb'))
 
 #--------------------------------------------------------------------------------
 
