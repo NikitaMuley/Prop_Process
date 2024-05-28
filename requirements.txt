@@ -2,6 +2,7 @@ streamlit==1.27.1
 certifi==2020.6.20
 chardet==3.0.4
 numpy==1.26.3
+sklearn==0.0
 urllib3==1.25.9
 Werkzeug==1.0.1
 wincertstore==0.2
