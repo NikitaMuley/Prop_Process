@@ -34,38 +34,38 @@ def prop_prediction(input_data):
 def main():
     
     # giving a title
-    st.title('Process Proposal Prediction Web App')
+    st.title('Process Proposal Prediction App')
     
     
     # getting the input data from the user
-    RA_Product_Cost = st.number_input('RA Product Cost >>', format="%.2f")
-    RA_Product_Quote= st.number_input('RA Product Quote >>', format="%.2f")
-    RA_Labor_Hours= st.number_input('RA Labour Hours >>', format="%.2f")
-    RA_Labor_Cost= st.number_input('RA Labour Cost', format="%.2f")
-    RA_Labor_Quote= st.number_input('RA_Labor_Quote', format="%.2f")
-    RA_Service_Hours= st.number_input('RA_Service_Hours', format="%.2f")
-    RA_Service_Cost= st.number_input('RA_Service_Cost', format="%.2f")
-    RA_Service_Quote= st.number_input('RA_Service_Quote', format="%.2f")
-    Third_Party_Hours= st.number_input('Third_Party_Hours', format="%.2f")
-    Third_Party_Cost= st.number_input('Third_Party_Cost', format="%.2f")
-    Third_Party_Quote= st.number_input('Third_Party_Quote', format="%.2f")
-    Recovered_Project_Cost= st.number_input('Recovered_Project_Cost', format="%.2f")
-    Recovered_Project_Quote= st.number_input('Recovered_Project_Quote', format="%.2f")
-    Absorbed_Project_Cost= st.number_input('Absorbed_Project_Cost', format="%.2f")
-    Absorbed_Project_Quote= st.number_input('Absorbed_Project_Quote', format="%.2f")
-    Total_Project_Hours= st.number_input('Total_Project_Hours', format="%.2f")
-    Total_Project_Cost= st.number_input('Total_Project_Cost', format="%.2f")
-    Total_Project_Quote= st.number_input('Total_Project_Quote', format="%.2f")
-    Reporting_Price_US= st.number_input('Reporting_Price_US', format="%.2f")
-    KPI_BlendLaborRate= st.number_input('KPI_BlendLaborRate', format="%.2f")
-    KPI_BlendLaborCost= st.number_input('KPI_BlendLaborCost', format="%.2f")
+    RA_Product_Cost = st.number_input('Please enter RA Product Cost', format="%.2f")
+    RA_Product_Quote= st.number_input('Please enter RA Product Quote', format="%.2f")
+    RA_Labor_Hours= st.number_input('Please enter RA Labour Hours', format="%.2f")
+    RA_Labor_Cost= st.number_input('Please enter RA Labour Cost', format="%.2f")
+    RA_Labor_Quote= st.number_input('Please enter RA Labor Quote', format="%.2f")
+    RA_Service_Hours= st.number_input('Please enter RA Service Hours', format="%.2f")
+    RA_Service_Cost= st.number_input('Please enter RA Service Cost', format="%.2f")
+    RA_Service_Quote= st.number_input('Please enter RA Service Quote', format="%.2f")
+    Third_Party_Hours= st.number_input('Please enter Third Party Hours', format="%.2f")
+    Third_Party_Cost= st.number_input('Please enter Third Party Cost', format="%.2f")
+    Third_Party_Quote= st.number_input('Please enter Third Party Quote', format="%.2f")
+    Recovered_Project_Cost= st.number_input('Please enter Recovered Project Cost', format="%.2f")
+    Recovered_Project_Quote= st.number_input('Please enter Recovered Project Quote', format="%.2f")
+    Absorbed_Project_Cost= st.number_input('Please enter Absorbed Project Cost', format="%.2f")
+    Absorbed_Project_Quote= st.number_input('Please enter Absorbed Project Quote', format="%.2f")
+    Total_Project_Hours= st.number_input('Please enter Total Project Hours', format="%.2f")
+    Total_Project_Cost= st.number_input('Please enter Total Project Cost', format="%.2f")
+    Total_Project_Quote= st.number_input('Please enter Total Project Quote', format="%.2f")
+    Reporting_Price_US= st.number_input('Please enter Reporting Price in US Dollars', format="%.2f")
+    KPI_BlendLaborRate= st.number_input('Please enter BlendLaborRate(RA_Product_Quote/RA_Labor_Hours)', format="%.2f")
+    KPI_BlendLaborCost= st.number_input('Please enter BlendLaborCost(RA_Product_Cost/RA_Labor_Hours)', format="%.2f")
     
     # code for Prediction
     Proposal_Process_status = ''
     
     # creating a button for Prediction
     
-    if st.button('Status (Win/ Lost) >>'):
+    if st.button('PREDICT'):
         Proposal_Process_status = prop_prediction([RA_Product_Cost,RA_Product_Quote,RA_Labor_Hours,
                                    RA_Labor_Cost,RA_Labor_Quote,RA_Service_Hours,
                                    RA_Service_Cost,RA_Service_Quote,Third_Party_Hours,
